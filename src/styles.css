@@ -5,5 +5,21 @@
     transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl;
 }
 
+.btn-primary {
+    @apply inline-block mt-4 bg-gradient-to-r from-cyan-400 to-emerald-400 
+    font-bold text-white text-sm px-6 py-2 rounded-md shadow-md;
+}
+
+.btn-submit {
+    @apply bg-blue-400 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded;
+}
+
+.label-custom {
+    @apply block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2;
+}
+.input-box {
+    @apply block w-full border border-blue-400 border-opacity-25 focus:border-green-500 rounded-md py-3 px-4 mb-3;
+}
+
 @tailwind components;
 @tailwind utilities;
