@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" />
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
     <title>Portfolio | Neeraj Tangariya</title>
@@ -15,12 +18,12 @@
         <div class="absolute top-0 w-full h-1/2 left-0 right-0 bg-cover bg-bottom"
             style="background-image: url('public/img/backg.jpg');"></div>
     </div>
-    <section class="flex justify-center items-center min-h-screen">
-        <div class="relative">
+    <section id="profile" class="flex justify-center items-center min-h-screen">
+        <div class="relative wow zoomIn " data-wow-delay="0.5">
             <div class="bg-card">
             </div>
             <div class="relative md:flex max-w-4xl space-x-12 z-10 bg-white p-12 rounded-md shadow-md">
-                <div class="flex flex-col space-y-6 justify-between py-4">
+                <div class="wow zoomIn flex flex-col space-y-6 justify-between py-4" data-wow-delay="1s">
                     <div>
                         <P class="text-lg text-gray-400">
                             Hello 👋 I'm
@@ -81,26 +84,26 @@
                         <p class="text-xl text-gray-500 leading-relaxed" x-text="text"></p>
                     </div>
                     <div class="inline-flex content-center space-x-4 text-gray-500 text-4xl">
-                        <ion-icon name="logo-github"></ion-icon>
-                        <ion-icon name="logo-twitter"></ion-icon>
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-github" class="wow zoomIn" data-wow-duration="3s" data-wow-delay="3s"></ion-icon>
+                        <ion-icon name="logo-twitter" class="wow rotateIn" data-wow-duration="3s" data-wow-delay="3s"></ion-icon>
+                        <ion-icon name="logo-linkedin" class="wow zoomIn" data-wow-duration="3s" data-wow-delay="3s"></ion-icon>
+                        <ion-icon name="logo-facebook" class="wow rotateIn" data-wow-duration="3s" data-wow-delay="3s"></ion-icon>
                     </div>
                 </div>
                 <img src="public/img/profile.JPG" alt="neeraj_singh"
-                    class="w-80 rounded-full border-6 border-white shadow-md flex-shrink-0">
+                    class="wow rotateIn w-80 rounded-full border-6 border-white shadow-md flex-shrink-0" data-wow-delay="2s">
             </div>
         </div>
     </section>
     <section class="bg-gray-50 pt-20 pb-28 px-8">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center">
-                <h2 class="text-5xl text-gray-500 font-bold">
+            <div class="wow fadeInDown text-center">
+                <h2 class="text-5xl text-gray-500 font-bold" data-wow-delay="1s">
                     Services
                 </h2>
-                <p class="p-3 font-semibold">What we're provided</p>
+                <p class="wow zoomIn p-3 font-semibold" data-wow-delay="1.5s">What we're provided</p>
             </div>
-            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+            <div class="wow fadeInUp mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16" data-wow-delay="2s">
                 <div class="relative">
                     <div class="bg-card"></div>
                     <div class="relative z-10 bg-white p-12 rounded-md shadow-md">
@@ -142,14 +145,14 @@
     </section>
     <section class="bg-white-50 pt-20 pb-28 px-8">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center">
+            <div class="wow fadeInDown text-center" data-wow-delay="1s">
                 <h2 class="text-5xl text-gray-500 font-bold">
                     My Projects
                 </h2>
                 <p class="p-3 font-semibold">Here is my working projects list</p>
             </div>
             <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="rounded-md shadow-md lg:col-span-2">
+                <div class="wow fadeInLeft rounded-md shadow-md lg:col-span-2" data-wow-delay="1.5s">
                     <img src="public/img/company_theme.png" class="h-80 w-full object-cover" alt="">
                     <div class="p-8">
                         <h4 class="font-bold text-2xl">
@@ -158,12 +161,12 @@
                         <p class="pt-3 sm:text-left md:text-justify lg:text-justify">
                             Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.
                         </p>
-                        <a href="#" class="btn-primary">
+                        <a href="#" class="wow zoomIn btn-primary" data-wow-duration="5s">
                             Demo Project
                         </a>
                     </div>
                 </div>
-                <div class="rounded-md shadow-md">
+                <div class="wow fadeInRight rounded-md shadow-md" data-wow-delay="1.5s">
                     <img src="public/img/blog_theme.png" class="h-80 w-full object-cover" alt="">
                     <div class="p-8">
                         <h4 class="font-bold text-2xl">
@@ -172,12 +175,12 @@
                         <p class="pt-3 sm:text-left md:text-justify lg:text-justify">
                             Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.
                         </p>
-                        <a href="#" class="btn-primary">
+                        <a href="#" class="wow zoomIn btn-primary" data-wow-duration="5s">
                             Demo Project
                         </a>
                     </div>
                 </div>
-                <div class="rounded-md shadow-md md:col-span-3 lg:col-span-3">
+                <div class="wow fadeInUp rounded-md shadow-md md:col-span-3 lg:col-span-3" data-wow-delay="1s">
                     <img src="public/img/backg.jpg" class="h-80 w-full object-cover" alt="">
                     <div class="p-8">
                         <h4 class="font-bold text-2xl">
@@ -186,7 +189,7 @@
                         <p class="pt-3 sm:text-left md:text-justify lg:text-justify">
                             Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada.
                         </p>
-                        <a href="#" class="btn-primary">
+                        <a href="#" class="wow zoomIn btn-primary" data-wow-duration="5s">
                             Demo Project
                         </a>
                     </div>
@@ -197,50 +200,43 @@
     </section>
     <section id="contact" class="bg-white-50">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center">
+            <div class="wow fadeInDown text-center" data-wow-delay="1s">
                 <h2 class="text-5xl text-gray-500 font-bold">
                     Get in touch
                 </h2>
-                <p class="p-3 font-semibold">Feel free to contact us! 😊</p>
+                <p class="wow zoomIn p-3 font-semibold" data-wow-duration="3s">Feel free to contact us! 😊</p>
             </div>
-            <div class="mt-16 flex flex-col justify-center">
+            <div class="wow rotateIn mt-16 flex flex-col justify-center" data-wow-duration="5s" data-wow-delay="1s">
                 <div class="relative">
                     <div class="bg-card"></div>
                     <div class="relative z-10 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
                         <form action="">
                             <div class="-mx-3 md:flex mb-6">
-                                <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                                    <label class="label-custom"
-                                        for="full-name">
+                                <div class="md:w-1/2 px-3 mb-6 md:mb-0 wow zoomIn" data-wow-delay="5s">
+                                    <label class="label-custom" for="full-name">
                                         Full Name
                                     </label>
-                                    <input
-                                        class="input-box"
-                                        id="full-name" type="text" placeholder="John Doe" required>
+                                    <input class="input-box" id="full-name" type="text" placeholder="John Doe" required>
                                 </div>
-                                <div class="md:w-1/2 px-3">
-                                    <label class="label-custom"
-                                        for="email">
+                                <div class="md:w-1/2 px-3 wow zoomIn" data-wow-delay="5s">
+                                    <label class="label-custom" for="email">
                                         Email
                                     </label>
-                                    <input
-                                        class="input-box"
-                                        id="email" type="email" placeholder="john@example.com" required>
+                                    <input class="input-box" id="email" type="email" placeholder="john@example.com"
+                                        required>
                                 </div>
                             </div>
                             <div class="-mx-3 md:flex">
-                                <div class="md:w-full px-3">
-                                    <label class="label-custom"
-                                        for="message">
+                                <div class="md:w-full px-3 wow zoomIn" data-wow-delay="5s">
+                                    <label class="label-custom" for="message">
                                         Message
                                     </label>
-                                    <textarea
-                                        class="input-box"
-                                        name="message" id="message" cols="5" rows="5"></textarea>
+                                    <textarea class="input-box" name="message" id="message" cols="5"
+                                        rows="5"></textarea>
                                 </div>
                             </div>
                             <div class="flex justify-end">
-                                <button class="btn-submit" type="submit">
+                                <button class="wow zoomIn btn-submit" type="submit" data-wow-duration="10s" data-wow-delay="5s">
                                     Submit
                                 </button>
                             </div>
@@ -250,6 +246,16 @@
             </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
